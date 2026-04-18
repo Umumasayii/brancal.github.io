@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Niyobyose Brancal | Data Analyst & Statistics Student</title>
+  <meta name="description" content="Portfolio of Niyobyose Brancal, a Statistics student, Data Analyst, and Co-Facilitator at DataPlus Rwanda based in Kigali, Rwanda. Skilled in Python, R, Excel, Power BI, SQL, Tableau, SPSS, and data-driven reporting." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Niyobyose Brancal" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Niyobyose Brancal | Data Analyst & Statistics Student" />
+  <meta property="og:description" content="Statistics student, Data Analyst, and Co-Facilitator at DataPlus Rwanda with experience in analytics, dashboards, training support, and field data collection." />
+  <meta property="og:image" content="profile-brancal.jpg" />
+  <meta property="og:image:alt" content="Portrait of Niyobyose Brancal" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Niyobyose Brancal | Data Analyst & Statistics Student" />
+  <meta name="twitter:description" content="Portfolio of Niyobyose Brancal, based in Kigali, Rwanda." />
+  <meta name="twitter:image" content="profile-brancal.jpg" />
+
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --surface:#ffffff;
+      --surface-2:#f1f5fb;
+      --text:#1f2a37;
+      --muted:#5d6b7a;
+      --line:#dde5ef;
+      --primary:#1d4ed8;
+      --primary-soft:#e8f0ff;
+      --accent:#0f766e;
+      --shadow:0 10px 30px rgba(15, 23, 42, .07);
+      --radius:22px;
+      --max:1140px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(29,78,216,.06), transparent 26%),
+        radial-gradient(circle at top right, rgba(15,118,110,.06), transparent 22%),
+        var(--bg);
+      line-height:1.65;
+    }
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(var(--max), calc(100% - 2rem));margin:0 auto}
+
+    .nav{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(10px);
+      background:rgba(246,248,251,.86);
+      border-bottom:1px solid rgba(221,229,239,.8);
+    }
+    .nav-inner{
+      display:flex;align-items:center;justify-content:space-between;gap:1rem;
+      padding:1rem 0;
+    }
+    .brand{font-weight:800;letter-spacing:.02em;color:var(--primary)}
+    .nav-links{display:flex;gap:1.1rem;flex-wrap:wrap;color:var(--muted);font-size:.96rem}
+    .nav-links a:hover{color:var(--primary)}
+
+    .hero{padding:4rem 0 1.5rem}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:1.4rem;
+      align-items:stretch;
+    }
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-main{padding:2.3rem}
+    .eyebrow{
+      display:inline-block;
+      font-size:.92rem;
+      font-weight:700;
+      color:var(--accent);
+      background:#edfdfa;
+      border:1px solid #ccfbf1;
+      padding:.45rem .8rem;
+      border-radius:999px;
+      margin-bottom:1rem;
+    }
+    h1{
+      margin:0 0 .9rem;
+      font-size:clamp(2.4rem, 5vw, 4.6rem);
+      line-height:1.03;
+      letter-spacing:-.03em;
+    }
+    .lead{
+      font-size:1.08rem;
+      color:var(--muted);
+      max-width:64ch;
+      margin:0 0 1.2rem;
+    }
+    .hero-actions{
+      display:flex;gap:.8rem;flex-wrap:wrap;
+      margin-top:1.2rem;
+    }
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:.92rem 1.2rem;border-radius:999px;
+      border:1px solid var(--line);font-weight:700;
+      transition:.2s ease;background:var(--surface);color:var(--text)
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn.primary{background:var(--primary);color:white;border-color:var(--primary)}
+    .btn.soft{background:var(--primary-soft);border-color:#cfe0ff;color:var(--primary)}
+
+    .hero-side{
+      padding:1.2rem;
+      display:grid;gap:1rem;
+    }
+    .profile-wrap{
+      overflow:hidden;border-radius:18px;border:1px solid var(--line);
+      background:var(--surface-2);
+    }
+    .profile-wrap img{
+      width:100%;height:100%;object-fit:cover;aspect-ratio:4/5;
+    }
+    .quick{
+      display:grid;grid-template-columns:repeat(2,1fr);gap:.85rem;
+    }
+    .mini{
+      background:var(--surface-2);
+      border:1px solid var(--line);
+      border-radius:16px;padding:1rem;
+    }
+    .mini strong{display:block;font-size:1.2rem;margin-bottom:.12rem}
+    .mini span{color:var(--muted);font-size:.92rem}
+
+    section{padding:1rem 0 0}
+    .section-title{
+      margin:0 0 .75rem;
+      font-size:1.7rem;
+      letter-spacing:-.02em;
+    }
+    .section-copy{margin:0 0 1.25rem;color:var(--muted);max-width:75ch}
+    .grid-2{display:grid;grid-template-columns:1.05fr .95fr;gap:1.2rem}
+    .panel{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:1.5rem;
+    }
+    .chips{display:flex;flex-wrap:wrap;gap:.65rem}
+    .chip{
+      padding:.6rem .85rem;border-radius:999px;
+      background:var(--primary-soft);border:1px solid #d6e4ff;
+      color:#1e3a8a;font-size:.94rem;font-weight:600;
+    }
+
+    .timeline{display:grid;gap:1rem}
+    .timeline-item{
+      padding:1.1rem;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:linear-gradient(180deg, #ffffff, #fbfdff);
+    }
+    .timeline-item h3{margin:0;font-size:1.06rem}
+    .meta{color:var(--primary);font-size:.93rem;margin:.24rem 0 .55rem;font-weight:600}
+    .timeline-item p{margin:0;color:var(--muted)}
+
+    .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .project{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:1.2rem;
+    }
+    .project h3{margin:0 0 .5rem;font-size:1.05rem}
+    .project p{margin:0 0 .9rem;color:var(--muted)}
+
+    .contact-list{display:grid;gap:.8rem}
+    .contact-item{
+      padding:1rem;border:1px solid var(--line);border-radius:16px;background:var(--surface-2)
+    }
+    .label{display:block;font-size:.82rem;color:var(--muted);margin-bottom:.18rem}
+    .footer{
+      padding:2rem 0 3rem;text-align:center;color:var(--muted);font-size:.95rem
+    }
+
+    @media (max-width:980px){
+      .hero-grid,.grid-2,.project-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .nav-links{display:none}
+      .hero-main,.hero-side,.panel{padding:1.15rem}
+      .quick{grid-template-columns:1fr 1fr}
+      .container{width:min(var(--max), calc(100% - 1rem))}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Niyobyose Brancal",
+      "jobTitle": "Data Analyst and Statistics Student",
+      "description": "Statistics student, Data Analyst, and Co-Facilitator at DataPlus Rwanda based in Kigali, Rwanda.",
+      "image": "profile-brancal.jpg",
+      "email": "mailto:brancharich@gmail.com",
+      "telephone": "+250782220599",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kigali",
+        "addressCountry": "Rwanda"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/niyobyose-brancal-1b364a359/",
+        "https://www.dataplusrwanda.com/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "DataPlus Rwanda",
+        "url": "https://www.dataplusrwanda.com/"
+      },
+      "knowsAbout": [
+        "Python",
+        "R",
+        "Excel",
+        "Power BI",
+        "SQL Server",
+        "Tableau",
+        "SPSS",
+        "Shiny",
+        "Data Analysis",
+        "Statistics",
+        "Machine Learning",
+        "Monitoring and Evaluation"
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">Brancal Portfolio</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card hero-main">
+          <div class="eyebrow">Statistics Student • Data Analyst • Co-Facilitator</div>
+          <h1>Niyobyose Brancal</h1>
+          <p class="lead">
+            I am a Rwanda-based Statistics student and data professional with a strong foundation in mathematics, statistics, and analytical problem solving. I work with data to produce clear insights, useful dashboards, and practical reports that help people and organizations make better decisions.
+          </p>
+          <p class="lead">
+            I currently work with <strong>DataPlus Rwanda</strong> as a <strong>Co-Facilitator (Co-Trainer)</strong> and have also served as an <strong>Enumerator</strong> on impact assessment work. My experience combines analytics training, data collection, classroom support, and communication of technical ideas in a way that others can understand and use.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Contact me</a>
+            <a class="btn soft" href="CV_Brancal_Niyobyose.pdf" download>Download CV</a>
+            <a class="btn" href="https://www.linkedin.com/in/niyobyose-brancal-1b364a359/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn" href="https://www.dataplusrwanda.com/" target="_blank" rel="noopener noreferrer">DataPlus Rwanda</a>
+          </div>
+        </div>
+
+        <aside class="card hero-side">
+          <div class="profile-wrap">
+            <img src="profile-brancal.jpg" alt="Portrait of Niyobyose Brancal for portfolio website" />
+          </div>
+          <div class="quick">
+            <div class="mini"><strong>2023–2027</strong><span>BSc (Hons) in Statistics</span></div>
+            <div class="mini"><strong>DataPlus Rwanda</strong><span>Co-Facilitator & Enumerator</span></div>
+            <div class="mini"><strong>Python • R • BI</strong><span>Analytics and reporting tools</span></div>
+            <div class="mini"><strong>Kigali, Rwanda</strong><span>Open to opportunities</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About me</h2>
+      <p class="section-copy">
+        My work sits at the intersection of statistics, data analysis, and training. I enjoy taking raw or messy data and turning it into findings that are easier to understand, communicate, and act on. I am especially interested in using analytical tools to support learning, monitoring, project evaluation, and real-world decision making.
+      </p>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Professional profile</h3>
+          <p class="section-copy" style="margin-bottom:1rem;">
+            Through my roles in teaching support, field data collection, and analytics training, I have built experience in both technical and people-facing work. That means I do not only analyze data; I also explain it, teach it, and help others use it. This combination is useful in academic, nonprofit, consultancy, and business environments where clear communication matters as much as technical skill.
+          </p>
+          <div class="chips">
+            <span class="chip">Data Analysis</span>
+            <span class="chip">Statistics</span>
+            <span class="chip">Dashboards</span>
+            <span class="chip">Reporting</span>
+            <span class="chip">Training Support</span>
+            <span class="chip">Field Data Collection</span>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Languages</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Kinyarwanda</h3>
+              <div class="meta">Native</div>
+              <p>Used naturally for communication, facilitation, and community interaction.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>English</h3>
+              <div class="meta">Expert</div>
+              <p>Used in academic work, professional communication, reporting, and technical training.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills and tools</h2>
+      <p class="section-copy">
+        My skill set combines statistical reasoning, software-based analysis, dashboard building, and training support. I am comfortable moving from data cleaning and analysis to presentation of findings in reports, dashboards, and practical explanations.
+      </p>
+      <div class="panel">
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">R</span>
+          <span class="chip">Excel</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">SQL Server</span>
+          <span class="chip">Tableau</span>
+          <span class="chip">SPSS</span>
+          <span class="chip">Shiny App</span>
+          <span class="chip">Monitoring &amp; Evaluation</span>
+          <span class="chip">Data Visualization</span>
+          <span class="chip">Report Writing</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Mathematics</span>
+          <span class="chip">Problem Solving</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Co-Facilitator (Co-Trainer) — DataPlus Rwanda</h3>
+          <div class="meta">May 2025 – Present • www.dataplusrwanda.com</div>
+          <p>
+            I support technical training delivery in Python for Data Analytics, R Programming for Data Analytics, Project Management, Advanced Excel and Power BI, Geospatial Data Analysis, Results-Based Monitoring and Evaluation, and Proposal Writing. This role has strengthened my ability to explain analytical concepts clearly, support learners with practical tasks, and connect technical tools to real organizational needs.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Enumerator — DataPlus Rwanda</h3>
+          <div class="meta">August 2025 – September 2025</div>
+          <p>
+            I worked in the data collection team during the impact assessment of the RYES project of KIRIMO Trust. This experience involved structured field work, accurate data capture, attention to quality, and contribution to research activities that depend on reliable evidence.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Math Olympiad Coach</h3>
+          <div class="meta">June 2025 – Present</div>
+          <p>
+            I conduct online algebra sessions, including work on polynomials, and lead in-person sessions focused on inequalities and competition-style problem solving. I also assist with marking and evaluating student performance during training camps. This role reflects my strength in analytical thinking, explanation, and learner support.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Teaching Assistant — IEE Rwanda</h3>
+          <div class="meta">December 2022 – May 2023</div>
+          <p>
+            I supported classroom instruction by helping deliver lessons, managing learning materials, and assisting with educational technology. I provided one-on-one and small-group guidance, supported students with different learning needs, contributed to classroom organization, and worked closely with teachers to communicate progress effectively.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education and certifications</h2>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>University of Rwanda</h3>
+              <div class="meta">June 2023 – September 2027</div>
+              <p>BH8STA BSc (Hons) in Statistics.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>GS Nyakabwende</h3>
+              <div class="meta">January 2019 – August 2022</div>
+              <p>A’ Level Certificate in Mathematics, Physics, and Computer Science.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>GS Gatare</h3>
+              <div class="meta">January 2016 – November 2018</div>
+              <p>O’ Level Certificate in general secondary education subjects.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Certifications</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Advanced Excel and Power BI</h3>
+              <div class="meta">Jan 2024 – Feb 2024 • DataPlus Rwanda</div>
+              <p>Training in spreadsheet analysis, reporting, and dashboard-oriented decision support.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Advanced Data Analytics With Python</h3>
+              <div class="meta">March 2024 – April 2024 • VONSUNG & ASSA-UR / University of Rwanda</div>
+              <p>Applied advanced Python-based analysis to real data tasks and analytical workflows.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Data Analysis with R</h3>
+              <div class="meta">Nov 2024 – Dec 2024 • DataPlus Rwanda</div>
+              <p>Practical training in analysis, statistical workflows, and communication of findings using R.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Geospatial Data Analysis</h3>
+              <div class="meta">April 2025 – May 2025 • DataPlus Rwanda</div>
+              <p>Focused on location-based analysis and analytical approaches involving geographic information.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Data Analysis With Python</h3>
+              <div class="meta">June 2025 – July 2025 • DataPlus Rwanda</div>
+              <p>Hands-on analytics training using Python tools and libraries for practical data tasks.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Project Management</h3>
+              <div class="meta">Sept 2025 – Oct 2025 • DataPlus Rwanda</div>
+              <p>Training in project planning, coordination, and structured delivery of work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2 class="section-title">Professional highlights</h2>
+      <p class="section-copy">
+        These highlight areas summarize the value I bring through my current training, work experience, and technical foundation.
+      </p>
+      <div class="project-grid">
+        <article class="project">
+          <h3>Analytics and dashboards</h3>
+          <p>I use tools such as Excel, Power BI, Python, R, and Tableau to organize data, analyze patterns, and present findings in a way decision-makers can quickly understand.</p>
+          <div class="chips">
+            <span class="chip">Power BI</span>
+            <span class="chip">Excel</span>
+            <span class="chip">Reporting</span>
+          </div>
+        </article>
+        <article class="project">
+          <h3>Training and facilitation</h3>
+          <p>I help deliver practical technical training, making complex analytical topics more accessible to learners and professionals through examples, guidance, and applied exercises.</p>
+          <div class="chips">
+            <span class="chip">Facilitation</span>
+            <span class="chip">Co-Training</span>
+            <span class="chip">Communication</span>
+          </div>
+        </article>
+        <article class="project">
+          <h3>Field and evaluation support</h3>
+          <p>I have contributed to data collection and impact assessment work, bringing attention to data quality, accuracy, and responsible handling of project information.</p>
+          <div class="chips">
+            <span class="chip">Enumeration</span>
+            <span class="chip">Impact Assessment</span>
+            <span class="chip">M&amp;E</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="grid-2">
+        <div class="panel">
+          <p class="section-copy">
+            I am open to internships, data analysis work, research support, training opportunities, and collaborations related to statistics, reporting, and evidence-based decision making.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="mailto:brancharich@gmail.com">Email me</a>
+            <a class="btn" href="tel:+250782220599">Call me</a>
+            <a class="btn" href="https://www.linkedin.com/in/niyobyose-brancal-1b364a359/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="contact-list">
+            <div class="contact-item">
+              <span class="label">Email</span>
+              <a href="mailto:brancharich@gmail.com">brancharich@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="label">Phone</span>
+              <a href="tel:+250782220599">+250 782 220 599</a>
+            </div>
+            <div class="contact-item">
+              <span class="label">Location</span>
+              Kigali, Rwanda
+            </div>
+            <div class="contact-item">
+              <span class="label">Organization</span>
+              <a href="https://www.dataplusrwanda.com/" target="_blank" rel="noopener noreferrer">DataPlus Rwanda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      Built as a professional static portfolio website. Includes your profile image, CV, and basic Google-friendly metadata.
+    </div>
+  </main>
+</body>
+</html>
